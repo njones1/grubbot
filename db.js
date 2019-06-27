@@ -1,6 +1,5 @@
-const url = 'mongodb://localhost/grubbot';
 const mongoist = require('mongoist');
-const db = mongoist(url);
+const db = mongoist(process.env.MONGO_CONNECTION);
 
 const functions = {
     getUser: async (slackUserId) => {

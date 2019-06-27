@@ -1,13 +1,10 @@
 const fetch = require('node-fetch');
 
-const BRAND = 'GRUBHUB'
-const CLIENT_ID = 'ghmobile_Tksvct4r0d9QXjTLU40W60x1grJ7LgOTu6KAsloR'
-
 const services = {
     authenticate: async(email, password) => {
         const params = {
-            'brand': BRAND,
-            'client_id': CLIENT_ID,
+            'brand': process.env.SERVICE_BRAND,
+            'client_id': process.env.SERVICE_CLIENT_ID,
             'email': email,
             'password':  password};
     
