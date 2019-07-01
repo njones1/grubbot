@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "@slack/bolt": "^1.2.0",
-    "async-request": "^1.2.0",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.0.0",
     "ejs": "^2.6.2",
